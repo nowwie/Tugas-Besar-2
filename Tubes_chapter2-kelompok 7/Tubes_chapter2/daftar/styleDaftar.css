@@ -1,0 +1,297 @@
+* {
+    text-decoration: none;
+}
+body {
+    font-family: 'Helvetica', italic;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(#dcdcdc, #3c9ee0);
+}
+/* css for top */
+.wrapper {
+    margin: auto;
+    width: 1200px;
+}/* LOGO */
+.logo h1 {
+    color: #ffffff;
+    float: left;
+    font-family: Tahoma;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-align: left;
+   
+}/* GAMBAR LOGO*/
+.tlk {
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}/*TOMBOL MENU*/
+.menu {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}/* NAVBAR */
+nav {
+    background-color: #c41b1b;
+    display: flex;
+    line-height: 40px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #d5d5d5 ;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0px 16px;
+}/* HOVER MENU */
+a.tbl-biru:hover {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px #e6e6e6;
+    cursor: pointer;
+    color: #000000;
+    padding: 10px 16px;
+}
+ .hed{
+    background-color:#c41b1b;
+    color:#ffffff;
+    font-size: 30px;
+padding: 10px 0 ;
+border-radius: 0 0 40px 40px;
+}
+/* TABEL INPUT */
+.tabel {
+    margin: 20px 50px 10px 30px;
+}
+.tabel input[type=text],
+select {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.tabel input[type=text]:hover {
+    border-radius: 30px;
+    box-shadow: 2px 0px 5px #08d115,
+   -2px 0px 5px #08d115;
+}
+.tabel input[type=number] {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.tabel input[type=number]:hover{
+    border-radius: 30px;
+    box-shadow: 2px 0px 5px #08d115,
+   -2px 0px 5px #08d115;
+}
+.tabel input[type=email] {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.tabel input[type=email]:hover{
+   
+    border-radius: 30px;
+    box-shadow: 2px 0px 5px #08d115,
+   -2px 0px 5px #08d115;
+}
+.tabel input[type=file] {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #4CAF50;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+.tabel input[type=file]:hover{
+    border-radius: 30px;
+    box-shadow: 2px 0px 5px #08d115,
+   -2px 0px 5px #08d115;
+}
+.tabel select:hover{
+    border-radius: 30px;
+    box-shadow: 2px 0px 5px #08d115,
+   -2px 0px 5px #08d115;
+}
+/* TABEL END */
+/* SELECT MENU */
+select option {
+    background-color: rgb(255, 240, 221);
+    border-radius: 20px;
+    color: rgb(43, 43, 22);
+}
+.tabel input {
+    background-color: rgb(248, 248, 248);
+    color: rgb(43, 43, 22);
+    margin: 100px
+}/* ISI TABEL MENU */
+.form {
+    background-color: rgb(255, 236, 212);
+    border-radius: 20px;
+    font-size: larger;
+    margin: 40px auto 70px auto;
+    padding-top: 10px;
+    width: 40%;
+}
+.form:hover{
+   transition: ease-out .2s;
+   border-radius: 30px;
+}
+/* JUDUL  WAJIB */
+.form h1 {
+    color: rgb(121, 15, 15);
+    margin-top: 10px;
+}/* LABEL FORM*/
+.form h5 {
+    color: rgb(209, 196, 153);
+    font-family: inherit;
+    font-size: small;
+    margin: 2px 0 0 8px;
+}/* TOMBOL BUTTON  */
+.tap {
+    border: 1px solid rgb(62, 156, 222);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0% 12% 5%;
+    padding: 12px 200px;
+}
+.tap:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+    transition: ease-out .5s;
+    border-radius: 30px;
+}/* POP UP  */
+.modal {
+    background-color: rgb(255, 250, 241);
+    border-radius: 12px;
+    left: 50%;
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    transition: 400ms ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+    width: 500px;
+    z-index: 1;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+    color: #161b1c;
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 10px;
+}
+.modal-header .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff3a3a;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: thin;
+    outline: none;
+}
+#overlay {
+    background-color: rgba(0, 0, 0, .5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: 200ms ease-in-out;
+    top: 0;
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events:fill;
+}
+.modal-body {
+    width: 500px;
+    height: 630px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgb(255, 234, 208);
+}
+.modal-body input {
+    width: 450px;
+    height: 25px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 6px;
+    padding-left: 10px;
+    color: #091517;
+}
+.modal-body h5 {
+    color: #000000;
+    margin: 5px 0 10px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}/* FOOTER*/
+footer {
+    background: #0b0660;
+    color: #ffffff;
+    font-family: open sans;
+    height: auto;
+    width: auto;
+}
+.isi-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.isi-footer h2 {
+    text-transform: capitalize;
+}
+.social {
+    list-style-type: none;
+    display: flex;
+    margin: 20px 5px 0;
+}
+.social li {
+    margin: 0 10px;
+}
+.social a {
+    color: #ffffff;
+}
+.social a:hover {
+    color: #fff45f;
+}
+.copyright {
+    background: #0b0660;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+.copyright span {
+    opacity: .5;
+    text-transform: uppercase;
+}

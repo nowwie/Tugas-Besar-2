@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first</title>
+  <link rel="stylesheet" href="styleDaftar.css">
+  <script defer src="scriptDaftar.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <h1>TELKOM INDUSTRY</h1>
+      </div>
+      <div class="tlk">
+        <img src="https://www.telkom.co.id/data/image_upload/page/1594112895830_compress_PNG%20Icon%20Telkom.png"
+          width="50">
+      </div>
+      <!-- tombol menu header -->
+      <div class="menu">
+        <ul>
+          <li><a href="/home.html" class="tbl-biru">HOME</a></li>
+          <li><a href="daftar.html" class="tbl-biru">PENDAFTARAN</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <div class="hed" align="center">
+    <h3>Formulir pendaftaran calon karyawan Telkom industry</h3>
+  </div>
+  <!-- FORM PENDAFTARAN START -->
+
+  <!-- form pendaftaran wajib start -->
+  <div class="form">
+
+    <h5>masukkan data anda dengan benar*</h5> <!-- label pesan form -->
+    <h1 align="center">Data Wajib diisi</h1> <!-- judul form -->
+
+    <form class="tabel">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="nama legkap" required>
+      <label for="nomor hp">Nomor HP</label>
+      <input type="number" id="nomer" name="nomer" placeholder="Nomer HP" required>
+      <label for="email"> e-mail aktif</label>
+      <input type="email" id="email" name="email" placeholder="e-mail aktif" required>
+      <label for="pendidikan">Pendidikan terakhir</label>
+      <input type="text" id="pendidikan" name="pendidikan" placeholder="pendidikan terakhir" required>
+      <label for="universitas">Asal Universitas</label>
+      <input type="text" id="universitas" name="universitas" placeholder="asal universitas" required>
+
+      <!-- option bidang pekerjaan -->
+
+      <label for="bidang">bidang pekerjaan</label> <!-- judul form -->
+
+      <!-- option start -->
+
+      <select id="bidang">
+        <option value="front end">Front end</option>
+        <option value="back end"> Back end </option>
+        <option value="software architect">Software architect</option>
+        <option value="quality">Quality assurance</option>
+        <option value="document engineer">Document engineer</option>
+        <option value="android">Android developer</option>
+        <option value="IOS developer">IOS developer </option>
+      </select>
+
+      <!-- option end -->
+
+      <label for="lapeng">lama pengalaman</label>
+      <input type="number" id="lapeng" name="lapeng" placeholder="lama pengalaman" required>
+
+      <!-- form pendaftaran wajib end -->
+
+
+      <h1 align="center">Opsional</h1> <!-- judul form -->
+
+      <!-- form data tidak wajib start -->
+
+      <label for="backskul">background sekolah</label>
+      <input type="text" id="backskul" name="backskul" placeholder="background sekolah">
+      <label for="sertif">masukkan sertifikat</label>
+      <input type="text" id="sertif" name="sertif" placeholder="sertifikat international">
+      <label for="file">masukkan file</label>
+      <input type="file" name="userfile" id="file" accept=".pdf" />
+    </form>
+
+
+
+    <!-- form pendaftaran tidak wajib end -->
+
+    <!--button -->
+    <button class="tap" data-modal-target="#modal" onclick="cetak()">SUBMIT</button>
+
+
+
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">hasil data anda</div> <!-- label cetak -->
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h5>nama</h5>
+        <input type="text" id="Nm" readonly>
+        <h5> nomor hp</h5>
+        <input type="text" id="Nr" readonly>
+        <h5>email</h5>
+        <input type="text" id="Em" readonly>
+        <h5>pendidikan</h5>
+        <input type="text" id="Pd" readonly>
+        <h5>universitas</h5>
+        <input type="text" id="Un" readonly>
+        <h5>bidang</h5>
+        <input type="text" id="Bd" readonly>
+        <h5>lama penngalaman</h5>
+        <input type="text" id="Lp" readonly>
+        <br><br><br>
+        <h5>background sekolah</h5>
+        <input type="text" id="BGs" readonly>
+        <h5>sertifikat</h5>
+        <input type="text" id="Srt" readonly>
+        <h5>file</h5>
+        <input type="text" id="fl" readonly>
+        </td>
+      </div>
+    </div>
+  </div>
+
+  <!--cetak end -->
+
+  <!-- overlay -->
+  <div id="overlay"></div>
+
+  <!-- footer -->
+  <footer>
+    <div class="isi-footer">
+      <h1>Contac Us</h1>
+      <ul class="social">
+        <li><a href="https://id.wikipedia.org/wiki/Facebook_(jejaring_sosial)">Facebook</a></li>
+        <li><a href="https://www.instagram.com/__lakyulakyu/">Instagram</a></li>
+        <li><a href="https://id.wikipedia.org/wiki/Twitter">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>copyright 2022 codeOpacity. designed by <span>kelompok 7</span></p>
+    </div>
+  </footer>
+  <!-- footer -->
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+* {
+    text-decoration: none;
+}
+body {
+    font-family: 'Helvetica', italic;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f0f9ff;
+}
+/* css for top */
+.wrapper {
+
+    margin: auto;
+    width: 1200px;
+}
+/* LOGO */
+.logo h1 {
+    color: #ffffff;
+    float: left;
+    font-family: Tahoma;
+    font-weight: bolder;
+    margin-left: 10px;
+    text-align: left;
+}
+/* FOTO LOGO */
+.tlk {
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* MENU */
+.menu {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/* NAVBAR START */
+nav {
+    background-color: #c41b1b;
+    bottom: 10px;
+    display: flex;
+    line-height: 40px;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0px 16px;
+}
+a.tbl-biru:hover {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px #e6e6e6;
+    cursor: pointer;
+    color: #000000;
+    padding: 10px 16px;
+}
+/* NAVBAR END */
+/* GAMBAR */
+.gambar {
+    margin-bottom: 10px;
+}
+section .h1:hover {
+    animation: alternate;
+    box-shadow: 0px 2px 10px #c72b2b;
+    transition: all 0.25s ease-in-out;
+}
+.gambar section .h1 {
+    border-radius: 0px 0px 50px 50px;
+    margin-bottom: 20px;
+}
+/* GAMBAR END */
+
+/* ISI HOME */
+table {
+    border-radius: 20px;
+    margin-bottom: 100px;
+    margin-inline: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: justify;
+}
+table th h1 {
+    color: rgb(213, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-left: 300px;
+    padding-right: 100px;
+
+}
+table td h1 {
+    color: rgb(213, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-right: 200px;
+    text-align: justify;
+   
+}
+td{
+    padding-left: 20px;
+}
+td .h1 img{
+    padding-left: none;
+    border-radius: 20px;
+}
+/* JOIN BUTTON */
+.join {
+    margin-bottom: 70px;
+}
+.tbl-merah {
+    background-color: #21a22e;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 120px;
+    margin-top: 20px;
+    padding: 15px 200px 15px 200px;
+}
+.tbl-merah:hover {
+    background: #ff3f3f;
+    color: rgb(255, 249, 237);
+    text-decoration: none;
+    transition: ease-out .3s;
+}
+/* JOIN END */
+/* FOOTER  */
+footer {
+    background: #0b0660;
+    color: #ffffff;
+    font-family: open sans;
+    height: auto;
+    width: auto;
+}
+.isi-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.isi-footer h2 {
+    text-transform: capitalize;
+}
+.social {
+    list-style-type: none;
+    display: flex;
+    margin: 20px 20px 0;
+}
+.social li {
+    margin: 0 10px;
+}
+.social a {
+    color: #ffffff;
+}
+.social a:hover {
+    color: #fff45f;
+}
+.copyright {
+    background: #0b0660;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+.copyright span {
+    font-weight: 200;
+    opacity: .5;
+    text-transform: uppercase;
+}
+/* FOOTER END */
